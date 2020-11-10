@@ -850,7 +850,7 @@
       <column caption='Customer Type' datatype='string' name='[CST_TYPE]' role='dimension' type='nominal' />
       <column caption='Customer Category' datatype='string' name='[CUST_CAT]' role='dimension' type='nominal' />
       <column datatype='real' hidden='true' name='[CUST_ID (D_CUST)]' role='dimension' type='ordinal' />
-      <column datatype='real' name='[CUST_ID (F_SHIPMENT)]' role='dimension' type='ordinal' />
+      <column datatype='real' hidden='true' name='[CUST_ID (F_SHIPMENT)]' role='dimension' type='ordinal' />
       <column caption='Customer ID' datatype='real' name='[CUST_ID]' role='dimension' type='ordinal' />
       <column caption='Customer Sub Category' datatype='string' name='[CUST_SUB_CAT]' role='dimension' type='nominal' />
       <column caption='Sales Amount' datatype='real' name='[Calculation_1036953858303094784]' role='measure' type='quantitative'>
@@ -865,7 +865,8 @@
       <column caption='Date' datatype='datetime' name='[DT]' role='dimension' type='ordinal' />
       <column caption='Procurement Date' datatype='datetime' name='[DT_PROC]' role='dimension' type='ordinal' />
       <column caption='Sale Date' datatype='datetime' name='[DT_SALE]' role='dimension' type='ordinal' />
-      <column datatype='integer' name='[ID (F_SHIPMENT)]' role='dimension' type='ordinal' />
+      <column caption='Shipping Date' datatype='datetime' name='[DT_SHIP]' role='dimension' type='ordinal' />
+      <column datatype='integer' hidden='true' name='[ID (F_SHIPMENT)]' role='dimension' type='ordinal' />
       <column datatype='integer' hidden='true' name='[ID]' role='dimension' type='ordinal' />
       <column aggregation='Sum' caption='Month' datatype='real' name='[MNTH]' role='dimension' type='ordinal' />
       <column caption='Month Name' datatype='string' name='[MNTH_NM]' role='dimension' type='nominal' />
@@ -876,7 +877,7 @@
       <column caption='Product Category' datatype='string' name='[PROD_CAT]' role='dimension' type='nominal' />
       <column caption='Prudcut CD' datatype='string' name='[PROD_CD]' role='dimension' type='nominal' />
       <column datatype='real' hidden='true' name='[PROD_ID (D_PROD)]' role='dimension' type='ordinal' />
-      <column datatype='real' name='[PROD_ID (F_SHIPMENT)]' role='dimension' type='ordinal' />
+      <column datatype='real' hidden='true' name='[PROD_ID (F_SHIPMENT)]' role='dimension' type='ordinal' />
       <column caption='Product ID' datatype='real' name='[PROD_ID]' role='dimension' type='ordinal' />
       <column caption='Proudct Name' datatype='string' name='[PROD_NM]' role='dimension' type='nominal' />
       <column caption='Product Type' datatype='string' name='[PROD_TYPE]' role='dimension' type='nominal' />
@@ -888,7 +889,10 @@
       <column caption='Sale Status ID' datatype='real' name='[SALE_STAT_ID]' role='dimension' type='ordinal' />
       <column datatype='string' hidden='true' name='[SALE_TYPE_ID (D_SALE_TYPE)]' role='dimension' type='nominal' />
       <column caption='Sale Type ID' datatype='string' name='[SALE_TYPE_ID]' role='dimension' type='nominal' />
-      <column datatype='real' name='[STAT_ID]' role='dimension' type='ordinal' />
+      <column caption='Status Flag' datatype='string' name='[SHP_FLG]' role='dimension' type='nominal' />
+      <column caption='Status Code' datatype='string' name='[STAT_CD]' role='dimension' type='nominal' />
+      <column caption='Status ID' datatype='real' name='[STAT_ID]' role='dimension' type='ordinal' />
+      <column caption='Status Name' datatype='string' name='[STAT_NM]' role='dimension' type='nominal' />
       <column caption='Unit Cost' datatype='real' default-format='c&quot;$&quot;#,##0.00' name='[UNIT_COST]' role='measure' type='quantitative' />
       <column caption='Unit Price' datatype='real' default-format='c&quot;$&quot;#,##0.00;&quot;$&quot;-#,##0.00' name='[UNIT_PRICE]' role='measure' type='quantitative' />
       <column caption='Year' datatype='real' name='[YR]' role='dimension' type='quantitative' />
@@ -930,6 +934,10 @@
       <folder name='Status' role='dimensions'>
         <folder-item name='[ORDER_STAT_ID]' type='field' />
         <folder-item name='[SALE_STAT_ID]' type='field' />
+        <folder-item name='[SHP_FLG]' type='field' />
+        <folder-item name='[STAT_CD]' type='field' />
+        <folder-item name='[STAT_ID]' type='field' />
+        <folder-item name='[STAT_NM]' type='field' />
       </folder>
       <layout dim-ordering='alphabetic' dim-percentage='0.487805' measure-ordering='alphabetic' measure-percentage='0.512195' show-structure='false' user-set-layout='true' />
       <style>
