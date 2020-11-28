@@ -13,7 +13,7 @@
     <VizInTooltipHideWorksheet />
     <WindowsPersistSimpleIdentifiers />
   </document-format-change-manifest>
-  <repository-location id='SuperstoreSalesAnalysis_16061467844500' path='/workbooks' revision='1.4' />
+  <repository-location id='SuperstoreSalesAnalysis_16061467844500' path='/workbooks' revision='1.5' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -1631,8 +1631,8 @@
           </layout-options>
           <size maxheight='1550' minheight='1550' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='77' type='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97342' id='78' param='vert' type='layout-flow' w='98622' x='689' y='1329'>
+            <zone h='100000' id='81' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97342' id='82' param='vert' type='layout-flow' w='98622' x='689' y='1329'>
                 <zone h='6811' id='7' type='title' w='98622' x='689' y='1329'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
